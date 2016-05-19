@@ -19,6 +19,7 @@
 package xiaofei.algorithm.main;
 
 import xiaofei.algorithm.BinaryTreeNode;
+import xiaofei.algorithm.EightQueensPuzzle;
 import xiaofei.algorithm.InOrderTraversal;
 import xiaofei.algorithm.PostOrderTraversal;
 import xiaofei.algorithm.PreOrderTraversal;
@@ -64,10 +65,16 @@ public class Main {
         PostOrderTraversal.traversalCorecursively(root);
     }
 
+    private static void eightQueensPuzzle() {
+        System.out.println("\nEightQueensPuzzle");
+        EightQueensPuzzle.calculate();
+    }
+
     public static void main(String[] args) {
         BinaryTreeNode root = build();
         preOrderTraversal(root);
         inOrderTraversal(root);
         postOrderTraversal(root);
+        eightQueensPuzzle();
     }
 }

@@ -1,6 +1,8 @@
 # Algorithms
 每天写点算法。
 
+所有算法的测试用例在[Main.java](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/main/Main.java)中，运行这个文件便可以看到结果。
+
 ##二叉树遍历（递归与非递归）
 
 2016年5月18日

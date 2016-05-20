@@ -16,3 +16,9 @@
 2016年5月19日
 
 [八皇后](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/EightQueensPuzzle.java)
+
+##二叉排序树
+
+2016年5月20日
+
+[二叉排序树](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/BinarySearchTree.java)

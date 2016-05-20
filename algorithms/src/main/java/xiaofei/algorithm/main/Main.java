@@ -18,6 +18,7 @@
 
 package xiaofei.algorithm.main;
 
+import xiaofei.algorithm.BinarySearchTree;
 import xiaofei.algorithm.BinaryTreeNode;
 import xiaofei.algorithm.EightQueensPuzzle;
 import xiaofei.algorithm.InOrderTraversal;
@@ -70,11 +71,132 @@ public class Main {
         EightQueensPuzzle.calculate();
     }
 
+    private static void binarySearchTreeNoDeletion() {
+        System.out.println("\nbinarySearchTreeNoDeletion");
+        BinarySearchTree tree = new BinarySearchTree();
+        tree.insert(3);
+        tree.insert(2);
+        tree.insert(5);
+        tree.insert(4);
+        tree.insert(6);
+        tree.output();
+    }
+
+    private static void binarySearchTreeDeleteLeaf() {
+        System.out.println("\nbinarySearchTreeDeleteLeaf");
+        BinarySearchTree tree = new BinarySearchTree();
+        tree.insert(3);
+        tree.insert(2);
+        tree.insert(5);
+        tree.insert(4);
+        tree.insert(6);
+        tree.delete(6);
+        tree.output();
+    }
+
+
+    private static void binarySearchTreeDeleteNoRight() {
+        System.out.println("\nbinarySearchTreeDeleteNoRight");
+        BinarySearchTree tree = new BinarySearchTree();
+        tree.insert(3);
+        tree.insert(2);
+        tree.insert(8);
+        tree.insert(5);
+        tree.insert(4);
+        tree.insert(6);
+        tree.delete(8);
+        tree.output();
+    }
+
+    private static void binarySearchTreeDeleteNoLeft() {
+        System.out.println("\nbinarySearchTreeDeleteNoLeft");
+        BinarySearchTree tree = new BinarySearchTree();
+        tree.insert(3);
+        tree.insert(2);
+        tree.insert(8);
+        tree.insert(10);
+        tree.insert(11);
+        tree.delete(8);
+        tree.output();
+    }
+
+    private static void binarySearchTreeDelete() {
+        System.out.println("\nbinarySearchTreeDelete");
+        BinarySearchTree tree = new BinarySearchTree();
+        tree.insert(3);
+        tree.insert(2);
+        tree.insert(8);
+        tree.insert(10);
+        tree.insert(11);
+        tree.insert(5);
+        tree.insert(4);
+        tree.insert(6);
+        tree.delete(8);
+        tree.output();
+    }
+
+    private static void binarySearchTreeDeleteRootLeaf() {
+        System.out.println("\nbinarySearchTreeDeleteRootLeaf");
+        BinarySearchTree tree = new BinarySearchTree();
+        tree.insert(3);
+        tree.delete(3);
+        tree.output();
+    }
+
+
+    private static void binarySearchTreeDeleteRootNoRight() {
+        System.out.println("\nbinarySearchTreeDeleteRootNoRight");
+        BinarySearchTree tree = new BinarySearchTree();
+        tree.insert(4);
+        tree.insert(2);
+        tree.insert(3);
+        tree.delete(4);
+        tree.output();
+    }
+
+    private static void binarySearchTreeDeleteRootNoLeft() {
+        System.out.println("\nbinarySearchTreeDeleteRootNoLeft");
+        BinarySearchTree tree = new BinarySearchTree();
+        tree.insert(3);
+        tree.insert(5);
+        tree.insert(8);
+        tree.insert(6);
+        tree.delete(3);
+        tree.output();
+    }
+
+    private static void binarySearchTreeDeleteRoot() {
+        System.out.println("\nbinarySearchTreeDeleteRoot");
+        BinarySearchTree tree = new BinarySearchTree();
+        tree.insert(8);
+        tree.insert(2);
+        tree.insert(5);
+        tree.insert(1);
+        tree.insert(4);
+        tree.insert(3);
+        tree.delete(8);
+        tree.output();
+    }
+
+    private static void binarySearchTree() {
+        binarySearchTreeNoDeletion();
+        binarySearchTreeDeleteLeaf();
+        binarySearchTreeDeleteNoRight();
+        binarySearchTreeDeleteNoLeft();
+        binarySearchTreeDelete();
+        binarySearchTreeDeleteRootLeaf();
+        binarySearchTreeDeleteRootNoRight();
+        binarySearchTreeDeleteRootNoLeft();
+        binarySearchTreeDeleteRoot();
+    }
+
+
     public static void main(String[] args) {
         BinaryTreeNode root = build();
         preOrderTraversal(root);
         inOrderTraversal(root);
         postOrderTraversal(root);
         eightQueensPuzzle();
+        binarySearchTree();
     }
 }

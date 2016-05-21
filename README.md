@@ -24,3 +24,15 @@
 2016年5月20日
 
 [二叉排序树](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/BinarySearchTree.java)
+
+##二叉树的高度（递归和非递归）
+
+2016年5月21日
+
+初中开始编程，之前很擅长递归变非递归。这两年算法题几乎没怎么做，所以最近自己多写写。
+
+个人觉得非递归算法很有意思，校招迅雷的时候，跟面试官将了一下怎么将递归变非递归，当时他觉得太牛了。
+
+很多人会觉得我代码太复杂，尤其昨天BST节点删除的代码估计很多人看了会吐血。我写算法一般不看别人的代码，完全是自己理解后写的，是适合自己的。我觉得时间复杂度都差不多，最多差个常数，所以代码复杂点无所谓。何况我自己写算法只是想保持思维，不是想考ACM。
+
+[二叉树的高度](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/BinaryTreeHeight.java)

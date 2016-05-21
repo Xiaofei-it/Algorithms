@@ -19,6 +19,7 @@
 package xiaofei.algorithm.main;
 
 import xiaofei.algorithm.BinarySearchTree;
+import xiaofei.algorithm.BinaryTreeHeight;
 import xiaofei.algorithm.BinaryTreeNode;
 import xiaofei.algorithm.EightQueensPuzzle;
 import xiaofei.algorithm.InOrderTraversal;
@@ -191,6 +192,32 @@ public class Main {
     }
 
 
+    private static void binaryTreeHeight() {
+        System.out.println("\nBinaryTreeHeight");
+        System.out.println(BinaryTreeHeight.calculateCorecursively(null));
+        System.out.println(BinaryTreeHeight.calculateRecursively(null));
+        BinaryTreeNode node0 = new BinaryTreeNode(),
+                node1 = new BinaryTreeNode(),
+                node2 = new BinaryTreeNode(),
+                node3 = new BinaryTreeNode(),
+                node4 = new BinaryTreeNode(),
+                node5 = new BinaryTreeNode();
+        node0.data = 0; node1.data = 1; node2.data = 2; node3.data = 3; node4.data = 4; node5.data = 5;
+        System.out.println(BinaryTreeHeight.calculateCorecursively(node0));
+        System.out.println(BinaryTreeHeight.calculateRecursively(node0));
+        node0.left = node1;
+        System.out.println(BinaryTreeHeight.calculateCorecursively(node0));
+        System.out.println(BinaryTreeHeight.calculateRecursively(node0));
+        node0.left = null; node0.right = node1;
+        System.out.println(BinaryTreeHeight.calculateCorecursively(node0));
+        System.out.println(BinaryTreeHeight.calculateRecursively(node0));
+        node0.left = node1; node0.right = node2;
+        node2.left = node3; node2.right = node4;
+        node4.right = node5;
+        System.out.println(BinaryTreeHeight.calculateCorecursively(node0));
+        System.out.println(BinaryTreeHeight.calculateRecursively(node0));
+    }
+
     public static void main(String[] args) {
         BinaryTreeNode root = build();
         preOrderTraversal(root);
@@ -198,5 +225,6 @@ public class Main {
         postOrderTraversal(root);
         eightQueensPuzzle();
         binarySearchTree();
+        binaryTreeHeight();
     }
 }

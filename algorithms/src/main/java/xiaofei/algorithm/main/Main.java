@@ -21,6 +21,7 @@ package xiaofei.algorithm.main;
 import xiaofei.algorithm.BinarySearchTree;
 import xiaofei.algorithm.BinaryTreeHeight;
 import xiaofei.algorithm.BinaryTreeNode;
+import xiaofei.algorithm.DisjointSet;
 import xiaofei.algorithm.EightQueensPuzzle;
 import xiaofei.algorithm.InOrderTraversal;
 import xiaofei.algorithm.PostOrderTraversal;
@@ -218,6 +219,24 @@ public class Main {
         System.out.println(BinaryTreeHeight.calculateRecursively(node0));
     }
 
+    private static void disjointSet() {
+        System.out.println("\nDisjointSet");
+        DisjointSet<Integer> disjointSet = new DisjointSet<>();
+        for (int i = 0; i < 8; ++i) {
+            disjointSet.makeSet(i);
+        }
+        disjointSet.union(0, 1);
+        disjointSet.union(2, 3);
+        disjointSet.union(2, 4);
+        disjointSet.union(0, 2);
+        disjointSet.union(5, 6);
+        disjointSet.union(5, 7);
+        for (int i = 0; i < 8; ++i) {
+            System.out.println(disjointSet.find(i));
+        }
+
+    }
+
     public static void main(String[] args) {
         BinaryTreeNode root = build();
         preOrderTraversal(root);
@@ -226,5 +245,6 @@ public class Main {
         eightQueensPuzzle();
         binarySearchTree();
         binaryTreeHeight();
+        disjointSet();
     }
 }

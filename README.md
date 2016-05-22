@@ -36,3 +36,9 @@
 很多人会觉得我代码太复杂，尤其昨天BST节点删除的代码估计很多人看了会吐血。我写算法一般不看别人的代码，完全是自己理解后写的，是适合自己的。我觉得时间复杂度都差不多，最多差个常数，所以代码复杂点无所谓。何况我自己写算法只是想保持思维，不是想考ACM。
 
 [二叉树的高度](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/BinaryTreeHeight.java)
+
+##并查集
+
+2016年5月22日
+
+[并查集](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/DisjointSet.java)

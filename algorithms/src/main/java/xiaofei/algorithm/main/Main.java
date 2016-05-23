@@ -18,6 +18,7 @@
 
 package xiaofei.algorithm.main;
 
+import xiaofei.algorithm.AckermannFunction;
 import xiaofei.algorithm.BinarySearchTree;
 import xiaofei.algorithm.BinaryTreeHeight;
 import xiaofei.algorithm.BinaryTreeNode;
@@ -244,6 +245,21 @@ public class Main {
         KnightCruise.solve(false);
     }
 
+    private static void ackermannFunction() {
+        System.out.println("\nAckermannFunction recursive");
+        for (int m = 0; m <= 3; ++m) {
+            for (int n = 0; n <= 4; ++n) {
+                System.out.println("Ack(" + m + "," + n + ")=" + AckermannFunction.calculateRecursively(m, n));
+            }
+        }
+        System.out.println("\nAckermannFunction corecursive");
+        for (int m = 0; m <= 3; ++m) {
+            for (int n = 0; n <= 4; ++n) {
+                System.out.println("Ack(" + m + "," + n + ")=" + AckermannFunction.calculateCorecursively(m, n));
+            }
+        }
+    }
+
     public static void main(String[] args) {
         BinaryTreeNode root = build();
         preOrderTraversal(root);
@@ -254,5 +270,6 @@ public class Main {
         binaryTreeHeight();
         disjointSet();
         knightCruise();
+        ackermannFunction();
     }
 }

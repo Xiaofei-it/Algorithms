@@ -42,3 +42,9 @@
 2016年5月22日
 
 [并查集](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/DisjointSet.java)
+
+##骑士巡游（递归和非递归）
+
+2016年5月23日
+
+[骑士巡游](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/KnightCruise.java)

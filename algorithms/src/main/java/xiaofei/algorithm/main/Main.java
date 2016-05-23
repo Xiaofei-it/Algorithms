@@ -24,6 +24,7 @@ import xiaofei.algorithm.BinaryTreeNode;
 import xiaofei.algorithm.DisjointSet;
 import xiaofei.algorithm.EightQueensPuzzle;
 import xiaofei.algorithm.InOrderTraversal;
+import xiaofei.algorithm.KnightCruise;
 import xiaofei.algorithm.PostOrderTraversal;
 import xiaofei.algorithm.PreOrderTraversal;
 
@@ -234,7 +235,13 @@ public class Main {
         for (int i = 0; i < 8; ++i) {
             System.out.println(disjointSet.find(i));
         }
+    }
 
+    private static void knightCruise() {
+        System.out.println("\nKnightCruise Recursive");
+        KnightCruise.solve(true);
+        System.out.println("\nKnightCruise Corecursive");
+        KnightCruise.solve(false);
     }
 
     public static void main(String[] args) {
@@ -246,5 +253,6 @@ public class Main {
         binarySearchTree();
         binaryTreeHeight();
         disjointSet();
+        knightCruise();
     }
 }

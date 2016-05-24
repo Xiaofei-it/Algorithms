@@ -48,3 +48,9 @@
 2016年5月23日
 
 [骑士巡游](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/KnightCruise.java)
+
+##阿克曼函数（Ackermann function）递归与非递归
+
+2016年5月24日
+
+[Ackermann function](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/AckermannFunction.java)

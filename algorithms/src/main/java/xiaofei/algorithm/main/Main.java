@@ -18,6 +18,8 @@
 
 package xiaofei.algorithm.main;
 
+import java.util.Random;
+
 import xiaofei.algorithm.AckermannFunction;
 import xiaofei.algorithm.BinarySearchTree;
 import xiaofei.algorithm.BinaryTreeHeight;
@@ -28,6 +30,7 @@ import xiaofei.algorithm.InOrderTraversal;
 import xiaofei.algorithm.KnightCruise;
 import xiaofei.algorithm.PostOrderTraversal;
 import xiaofei.algorithm.PreOrderTraversal;
+import xiaofei.algorithm.QuickSort;
 
 /**
  * Created by Xiaofei on 16/5/18.
@@ -260,6 +263,45 @@ public class Main {
         }
     }
 
+    private static void quickSort() {
+        System.out.println("\nQuickSort Recursively\n");
+        Random random = new Random();
+        final int size = 20;
+        int[] arr = new int[size];
+        for (int k = 0; k < 3; ++k) {
+            for (int i = 0; i < size; ++i) {
+                arr[i] = random.nextInt(100);
+            }
+            System.out.println("Before");
+            for (int i = 0; i < size; ++i) {
+                System.out.print(" " + arr[i]);
+            }
+            System.out.println();
+            QuickSort.sort(arr, true);
+            System.out.println("After");
+            for (int i = 0; i < size; ++i) {
+                System.out.print(" " + arr[i]);
+            }
+            System.out.println();
+        }
+        System.out.println("\nQuickSort Corecursively\n");
+        for (int k = 0; k < 3; ++k) {
+            for (int i = 0; i < size; ++i) {
+                arr[i] = random.nextInt(100);
+            }
+            System.out.println("Before");
+            for (int i = 0; i < size; ++i) {
+                System.out.print(" " + arr[i]);
+            }
+            System.out.println();
+            System.out.println("After");
+            QuickSort.sort(arr, false);
+            for (int i = 0; i < size; ++i) {
+                System.out.print(" " + arr[i]);
+            }
+            System.out.println();
+        }
+    }
     public static void main(String[] args) {
         BinaryTreeNode root = build();
         preOrderTraversal(root);
@@ -271,5 +313,6 @@ public class Main {
         disjointSet();
         knightCruise();
         ackermannFunction();
+        quickSort();
     }
 }

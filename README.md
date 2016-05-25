@@ -54,3 +54,15 @@
 2016年5月24日
 
 [Ackermann function](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/AckermannFunction.java)
+
+##快速排序（递归与非递归）
+
+2016年5月25日
+
+自虐一番，写一个非递归快速排序，这次用state表示递归函数执行到的地方，并且将需要用到的临时变量i保存在stack中。
+
+估计不会有人蛋疼地写一个非递归快排，呵呵！
+
+我觉得非递归先放一下啦，还有好多算法要温习，所以最近暂时不写非递归了。
+
+[非递归快速排序](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/QuickSort.java)

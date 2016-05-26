@@ -66,3 +66,11 @@
 我觉得非递归先放一下啦，还有好多算法要温习，所以最近暂时不写非递归了。
 
 [非递归快速排序](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/QuickSort.java)
+
+##八数码问题（九宫格问题）
+
+2016年5月26日
+
+这次练一下BFS，下次用A*解决问题。
+
+[八数码问题](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/EightDigitMaze.java)

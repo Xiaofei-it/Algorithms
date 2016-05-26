@@ -25,6 +25,7 @@ import xiaofei.algorithm.BinarySearchTree;
 import xiaofei.algorithm.BinaryTreeHeight;
 import xiaofei.algorithm.BinaryTreeNode;
 import xiaofei.algorithm.DisjointSet;
+import xiaofei.algorithm.EightDigitMaze;
 import xiaofei.algorithm.EightQueensPuzzle;
 import xiaofei.algorithm.InOrderTraversal;
 import xiaofei.algorithm.KnightCruise;
@@ -302,6 +303,18 @@ public class Main {
             System.out.println();
         }
     }
+
+    private static void eightDigitMaze() {
+        System.out.println("\nEightDigitMaze1");
+        EightDigitMaze.solve(new int[][] {{1, 2, 3}, {4, 5, 6}, {7, 8, 0}} , new int[][]{{1, 2, 3}, {4, 5, 0}, {7, 8, 6}});
+        System.out.println("\nEightDigitMaze2");
+        EightDigitMaze.solve(new int[][] {{1, 2, 3}, {4, 5, 6}, {7, 8, 0}} , new int[][]{{1, 3, 2}, {7, 4, 0}, {5, 8, 6}});
+        System.out.println("\nEightDigitMaze3");
+        EightDigitMaze.solve(new int[][] {{1, 2, 3}, {4, 5, 6}, {7, 8, 0}} , new int[][]{{1, 5, 2}, {7, 4, 3}, {8, 6, 0}});
+        System.out.println("\nEightDigitMaze4");
+        EightDigitMaze.solve(new int[][] {{1, 2, 3}, {4, 5, 6}, {7, 8, 0}} , new int[][]{{5, 0, 2}, {1, 7, 3}, {8, 4, 6}});
+    }
+
     public static void main(String[] args) {
         BinaryTreeNode root = build();
         preOrderTraversal(root);
@@ -314,5 +327,6 @@ public class Main {
         knightCruise();
         ackermannFunction();
         quickSort();
+        eightDigitMaze();
     }
 }

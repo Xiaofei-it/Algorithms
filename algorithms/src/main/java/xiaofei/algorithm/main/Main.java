@@ -18,6 +18,7 @@
 
 package xiaofei.algorithm.main;
 
+import java.util.List;
 import java.util.Random;
 
 import xiaofei.algorithm.AckermannFunction;
@@ -29,6 +30,7 @@ import xiaofei.algorithm.EightDigitMaze;
 import xiaofei.algorithm.EightQueensPuzzle;
 import xiaofei.algorithm.InOrderTraversal;
 import xiaofei.algorithm.KnightCruise;
+import xiaofei.algorithm.DoublyLinkedList;
 import xiaofei.algorithm.PostOrderTraversal;
 import xiaofei.algorithm.PreOrderTraversal;
 import xiaofei.algorithm.QuickSort;
@@ -315,6 +317,90 @@ public class Main {
         EightDigitMaze.solve(new int[][] {{1, 2, 3}, {4, 5, 6}, {7, 8, 0}} , new int[][]{{5, 0, 2}, {1, 7, 3}, {8, 4, 6}});
     }
 
+    private static void doublyLinkedList() {
+        System.out.println("\nDoublyLinkedList");
+        DoublyLinkedList<Integer> list = new DoublyLinkedList<>();
+        //test add and get
+        for (int i = 0; i < 10; ++i) {
+            list.add(9 - i);
+        }
+        for (int i = 0; i < list.size(); ++i) {
+            System.out.print(" " + list.get(i));
+        }
+        System.out.println();
+        //test indexOf
+        System.out.println("index of 12: " + list.indexOf(12));
+        System.out.println("index of 9: " + list.indexOf(9));
+        System.out.println("index of 0: " + list.indexOf(0));
+        list.clear();
+
+        //test add(int, T)
+        for (int i = 0; i < 10; ++i) {
+            list.add(list.size(), 9 - i);
+        }
+        for (int i = 0; i < list.size(); ++i) {
+            System.out.print(" " + list.get(i));
+        }
+        System.out.println();
+        List<Integer> array = list.reversedArray();
+        for (int i = 0; i < array.size(); ++i) {
+            System.out.print(" " + array.get(i));
+        }
+        System.out.println();
+        list.clear();
+        list.add(0, 1);
+        list.add(0, 2);
+        list.add(1, 3);
+        for (int i = 0; i < list.size(); ++i) {
+            System.out.print(" " + list.get(i));
+        }
+        System.out.println();
+        array = list.reversedArray();
+        for (int i = 0; i < array.size(); ++i) {
+            System.out.print(" " + array.get(i));
+        }
+        System.out.println();
+        list.add(0, 4);
+        for (int i = 0; i < list.size(); ++i) {
+            System.out.print(" " + list.get(i));
+        }
+        System.out.println();
+        array = list.reversedArray();
+        for (int i = 0; i < array.size(); ++i) {
+            System.out.print(" " + array.get(i));
+        }
+        System.out.println();
+        list.add(2, 5);
+        for (int i = 0; i < list.size(); ++i) {
+            System.out.print(" " + list.get(i));
+        }
+        System.out.println();
+        array = list.reversedArray();
+        for (int i = 0; i < array.size(); ++i) {
+            System.out.print(" " + array.get(i));
+        }
+        System.out.println();
+        list.remove(4);
+        for (int i = 0; i < list.size(); ++i) {
+            System.out.print(" " + list.get(i));
+        }
+        System.out.println();
+        array = list.reversedArray();
+        for (int i = 0; i < array.size(); ++i) {
+            System.out.print(" " + array.get(i));
+        }
+        System.out.println();
+        list.remove(2);
+        for (int i = 0; i < list.size(); ++i) {
+            System.out.print(" " + list.get(i));
+        }
+        System.out.println();
+        array = list.reversedArray();
+        for (int i = 0; i < array.size(); ++i) {
+            System.out.print(" " + array.get(i));
+        }
+    }
+
     public static void main(String[] args) {
         BinaryTreeNode root = build();
         preOrderTraversal(root);
@@ -328,5 +414,6 @@ public class Main {
         ackermannFunction();
         quickSort();
         eightDigitMaze();
+        doublyLinkedList();
     }
 }

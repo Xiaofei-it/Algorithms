@@ -74,3 +74,11 @@
 这次练一下BFS，下次用A*解决问题。
 
 [八数码问题](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/EightDigitMaze.java)
+
+##双向链表
+
+2016年5月27日
+
+好久不写双向链表了，今天写一个。
+
+[双向链表](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/DoublyLinkedList.java)

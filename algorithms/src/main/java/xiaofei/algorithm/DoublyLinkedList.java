@@ -138,6 +138,7 @@ public class DoublyLinkedList<T> {
         if (node.next != null) {
             node.next.prev = node.prev;
         }
+        node.prev = node.next = null;
         --size;
         return node.data;
     }

@@ -23,7 +23,7 @@ import java.util.Stack;
 /**
  * Created by Xiaofei on 16/5/25.
  *
- * I write something is the recursive sort. It is my own understanding, the correctness of which cannot be guaranteed.
+ * I write something in the recursive sort. It is my own understanding, the correctness of which cannot be guaranteed.
  *
  */
 public class QuickSort {

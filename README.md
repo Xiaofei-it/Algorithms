@@ -82,3 +82,9 @@
 好久不写双向链表了，今天写一个。
 
 [双向链表](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/DoublyLinkedList.java)
+
+##基于双栈的计算器
+
+这是一道老题目。
+
+[基于双栈的计算器](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/DoubleStackBasedCalculator.java)

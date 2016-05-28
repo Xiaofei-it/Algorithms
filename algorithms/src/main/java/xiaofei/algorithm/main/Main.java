@@ -26,6 +26,7 @@ import xiaofei.algorithm.BinarySearchTree;
 import xiaofei.algorithm.BinaryTreeHeight;
 import xiaofei.algorithm.BinaryTreeNode;
 import xiaofei.algorithm.DisjointSet;
+import xiaofei.algorithm.DoubleStackBasedCalculator;
 import xiaofei.algorithm.EightDigitMaze;
 import xiaofei.algorithm.EightQueensPuzzle;
 import xiaofei.algorithm.InOrderTraversal;
@@ -401,6 +402,20 @@ public class Main {
         }
     }
 
+    private static void doubleStackBasedCalculator() {
+        System.out.println("\nDoubleStackBasedCalculator");
+        String[] inputs = new String[]{
+                "32+21",
+                "32+21*3",
+                "3+(8+9)",
+                "30+3+31/7*9*(9+1*2*71+2-90)",
+                "30+(3+31/7)*9*(9+1*2*(71+2*90))",
+        };
+        for (String input : inputs) {
+            System.out.println(DoubleStackBasedCalculator.solve(input));
+        }
+    }
+
     public static void main(String[] args) {
         BinaryTreeNode root = build();
         preOrderTraversal(root);
@@ -415,5 +430,6 @@ public class Main {
         quickSort();
         eightDigitMaze();
         doublyLinkedList();
+        doubleStackBasedCalculator();
     }
 }

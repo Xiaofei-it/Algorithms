@@ -35,6 +35,7 @@ import xiaofei.algorithm.DoublyLinkedList;
 import xiaofei.algorithm.PostOrderTraversal;
 import xiaofei.algorithm.PreOrderTraversal;
 import xiaofei.algorithm.QuickSort;
+import xiaofei.algorithm.TopologicalSort;
 
 /**
  * Created by Xiaofei on 16/5/18.
@@ -416,6 +417,26 @@ public class Main {
         }
     }
 
+    private static void topologicalSort() {
+        System.out.println("\nTopologicalSort");
+        TopologicalSort topologicalSort = new TopologicalSort(8);
+        topologicalSort.link(0, 3);
+        topologicalSort.link(1, 3);
+        topologicalSort.link(1, 4);
+        topologicalSort.link(2, 4);
+        topologicalSort.link(2, 7);
+        topologicalSort.link(3, 5);
+        topologicalSort.link(3, 6);
+        topologicalSort.link(3, 7);
+        topologicalSort.link(4, 6);
+        topologicalSort.link(7, 5);
+        List<Integer> list = topologicalSort.solve();
+        for (Integer i : list) {
+            System.out.print(" " + i);
+        }
+        System.out.println();
+    }
+
     public static void main(String[] args) {
         BinaryTreeNode root = build();
         preOrderTraversal(root);
@@ -431,5 +452,6 @@ public class Main {
         eightDigitMaze();
         doublyLinkedList();
         doubleStackBasedCalculator();
+        topologicalSort();
     }
 }

@@ -85,6 +85,14 @@
 
 ##基于双栈的计算器
 
+2016年5月28日
+
 这是一道老题目。
 
 [基于双栈的计算器](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/DoubleStackBasedCalculator.java)
+
+##拓扑排序
+
+2016年5月29日
+
+[拓扑排序](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/TopologicalSort.java)

@@ -96,3 +96,15 @@
 2016年5月29日
 
 [拓扑排序](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/TopologicalSort.java)
+
+##24点游戏
+
+2016年5月30日
+
+这个题目高中的时候用DFS做了好久。
+
+现在尝试BFS，二十分钟就写好了，感觉自己现在写代码真的比高中的时候快好多。
+
+做得比较吊的地方是输出的表达式是严格简化过的，不会出现多余括号。
+
+[24点游戏](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/TwentyFourGame.java)

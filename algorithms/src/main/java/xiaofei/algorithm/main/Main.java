@@ -36,6 +36,7 @@ import xiaofei.algorithm.PostOrderTraversal;
 import xiaofei.algorithm.PreOrderTraversal;
 import xiaofei.algorithm.QuickSort;
 import xiaofei.algorithm.TopologicalSort;
+import xiaofei.algorithm.TwentyFourGame;
 
 /**
  * Created by Xiaofei on 16/5/18.
@@ -437,6 +438,19 @@ public class Main {
         System.out.println();
     }
 
+    private static void twentyFourGame() {
+        System.out.println("\nTwentyFourGame");
+        for (int a = 1; a <= 13; ++a) {
+            for (int b = a; b <= 13; ++b) {
+                for (int c = b; c <=13; ++c) {
+                    for (int d = c; d <= 13; ++d) {
+                        TwentyFourGame.solve(a, b, c, d);
+                    }
+                }
+            }
+        }
+    }
+
     public static void main(String[] args) {
         BinaryTreeNode root = build();
         preOrderTraversal(root);
@@ -453,5 +467,6 @@ public class Main {
         doublyLinkedList();
         doubleStackBasedCalculator();
         topologicalSort();
+        twentyFourGame();
     }
 }

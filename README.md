@@ -108,3 +108,13 @@
 做得比较吊的地方是输出的表达式是严格简化过的，不会出现多余括号。
 
 [24点游戏](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/TwentyFourGame.java)
+
+##蛇形矩阵
+
+2016年5月31日
+
+纯自虐，写出了数学公式来解决蛇形矩阵，给出位置就可以用公式计算值。
+
+具体推导过程见代码的注释部分。
+
+[蛇形矩阵](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/SnakeMatrix.java)

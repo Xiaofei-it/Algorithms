@@ -35,6 +35,7 @@ import xiaofei.algorithm.DoublyLinkedList;
 import xiaofei.algorithm.PostOrderTraversal;
 import xiaofei.algorithm.PreOrderTraversal;
 import xiaofei.algorithm.QuickSort;
+import xiaofei.algorithm.SnakeMatrix;
 import xiaofei.algorithm.TopologicalSort;
 import xiaofei.algorithm.TwentyFourGame;
 
@@ -451,6 +452,12 @@ public class Main {
         }
     }
 
+    private static void snakeMatrix() {
+        System.out.println("\nSnakeMatrix");
+        for (int i = 1; i <= 10; ++i) {
+            SnakeMatrix.solve(i);
+        }
+    }
     public static void main(String[] args) {
         BinaryTreeNode root = build();
         preOrderTraversal(root);
@@ -468,5 +475,6 @@ public class Main {
         doubleStackBasedCalculator();
         topologicalSort();
         twentyFourGame();
+        snakeMatrix();
     }
 }

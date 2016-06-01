@@ -32,6 +32,7 @@ import xiaofei.algorithm.EightQueensPuzzle;
 import xiaofei.algorithm.InOrderTraversal;
 import xiaofei.algorithm.KnightCruise;
 import xiaofei.algorithm.DoublyLinkedList;
+import xiaofei.algorithm.MissionariesAndCannibalsProblem;
 import xiaofei.algorithm.PostOrderTraversal;
 import xiaofei.algorithm.PreOrderTraversal;
 import xiaofei.algorithm.QuickSort;
@@ -458,6 +459,12 @@ public class Main {
             SnakeMatrix.solve(i);
         }
     }
+
+    private static void missionariesAndCannibalsProblem() {
+        System.out.println("\nMissionariesAndCannibalsProblem");
+        MissionariesAndCannibalsProblem.solve();
+    }
+
     public static void main(String[] args) {
         BinaryTreeNode root = build();
         preOrderTraversal(root);
@@ -476,5 +483,6 @@ public class Main {
         topologicalSort();
         twentyFourGame();
         snakeMatrix();
+        missionariesAndCannibalsProblem();
     }
 }

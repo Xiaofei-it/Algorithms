@@ -118,3 +118,17 @@
 具体推导过程见代码的注释部分。
 
 [蛇形矩阵](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/SnakeMatrix.java)
+
+##野人传教士过河
+
+2016年6月1日
+
+设有3个传教士（Missionaries）和3个野人(Cannibals)来到河边，打算乘一只船从右岸渡到左岸去。
+该船的最大负荷能力为两个人（k=2）。在任何情况下：如果野人人数超过传教士人数，那么野人就会把传教士吃掉。
+他们怎样才能用这条船安全地把所有人都渡过河去呢？
+
+网上有人用dfs，这不很明显应该用bfs吗？？？
+
+好忧伤的六一儿童节！！！
+
+[野人传教士过河](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/MissionariesAndCannibalsProblem.java)

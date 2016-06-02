@@ -132,3 +132,11 @@
 好忧伤的六一儿童节！！！
 
 [野人传教士过河](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/MissionariesAndCannibalsProblem.java)
+
+##Equal sum
+
+2016年6月2日
+
+不知道怎么说这个题。
+
+[EqualSum](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/EqualSum.java)

@@ -29,6 +29,7 @@ import xiaofei.algorithm.DisjointSet;
 import xiaofei.algorithm.DoubleStackBasedCalculator;
 import xiaofei.algorithm.EightDigitMaze;
 import xiaofei.algorithm.EightQueensPuzzle;
+import xiaofei.algorithm.EqualSum;
 import xiaofei.algorithm.InOrderTraversal;
 import xiaofei.algorithm.KnightCruise;
 import xiaofei.algorithm.DoublyLinkedList;
@@ -465,6 +466,14 @@ public class Main {
         MissionariesAndCannibalsProblem.solve();
     }
 
+    private static void equalSum() {
+        System.out.println("\nEqualSum");
+        EqualSum.find(new int[]{1, 2, 3, 5, 1});
+        EqualSum.find(new int[]{1});
+        EqualSum.find(new int[]{1, 3});
+        EqualSum.find(new int[]{8, 7, 1});
+    }
+
     public static void main(String[] args) {
         BinaryTreeNode root = build();
         preOrderTraversal(root);
@@ -484,5 +493,7 @@ public class Main {
         twentyFourGame();
         snakeMatrix();
         missionariesAndCannibalsProblem();
+        equalSum();
+
     }
 }

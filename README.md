@@ -140,3 +140,9 @@
 不知道怎么说这个题。
 
 [EqualSum](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/EqualSum.java)
+
+##Find first in array
+
+2016年6月3日
+
+[FindFirstInArray](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/FindFirstInArray.java)

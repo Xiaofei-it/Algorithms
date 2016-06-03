@@ -30,6 +30,7 @@ import xiaofei.algorithm.DoubleStackBasedCalculator;
 import xiaofei.algorithm.EightDigitMaze;
 import xiaofei.algorithm.EightQueensPuzzle;
 import xiaofei.algorithm.EqualSum;
+import xiaofei.algorithm.FindFirstInArray;
 import xiaofei.algorithm.InOrderTraversal;
 import xiaofei.algorithm.KnightCruise;
 import xiaofei.algorithm.DoublyLinkedList;
@@ -474,6 +475,20 @@ public class Main {
         EqualSum.find(new int[]{8, 7, 1});
     }
 
+    private static void findFirstInArray() {
+        System.out.println("\nFindFirstInArray");
+        System.out.println(FindFirstInArray.solve(new int[]{2, 1}));
+        System.out.println(FindFirstInArray.solve(new int[]{2, 3}));
+        System.out.println(FindFirstInArray.solve(new int[]{2}));
+        System.out.println(FindFirstInArray.solve(new int[]{4, 1, 3}));
+        System.out.println(FindFirstInArray.solve(new int[]{4, 5, 1, 3}));
+        System.out.println(FindFirstInArray.solve(new int[]{6, 1, 3, 5}));
+        System.out.println(FindFirstInArray.solve(new int[]{6, 7, 8, 9, 1, 2, 3, 5}));
+        System.out.println(FindFirstInArray.solve(new int[]{6, 1, 1}));
+        System.out.println(FindFirstInArray.solve(new int[]{6, 1, 1, 1}));
+        System.out.println(FindFirstInArray.solve(new int[]{6, 6, 1}));
+    }
+
     public static void main(String[] args) {
         BinaryTreeNode root = build();
         preOrderTraversal(root);
@@ -494,6 +509,6 @@ public class Main {
         snakeMatrix();
         missionariesAndCannibalsProblem();
         equalSum();
-
+        findFirstInArray();
     }
 }

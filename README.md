@@ -152,3 +152,9 @@
 2016年6月4日
 
 [Prim](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/Prim.java)
+
+##Kruskal
+
+2016年6月5日
+
+[Kruskal](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/Kruskal.java)

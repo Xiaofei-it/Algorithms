@@ -34,6 +34,7 @@ import xiaofei.algorithm.FindFirstInArray;
 import xiaofei.algorithm.InOrderTraversal;
 import xiaofei.algorithm.KnightCruise;
 import xiaofei.algorithm.DoublyLinkedList;
+import xiaofei.algorithm.Kruskal;
 import xiaofei.algorithm.MissionariesAndCannibalsProblem;
 import xiaofei.algorithm.PostOrderTraversal;
 import xiaofei.algorithm.PreOrderTraversal;
@@ -503,6 +504,19 @@ public class Main {
         });
     }
 
+    private static void kruskal() {
+        System.out.println("\nKruskal");
+        Kruskal.solve(new int[][]{
+                {0, 7, 0, 5, 0, 0, 0},
+                {7, 0, 8, 9, 7, 0, 0},
+                {0, 8, 0, 0, 5, 0, 0},
+                {5, 9, 0, 0, 15, 6, 0},
+                {0, 7, 5, 15, 0, 8, 9},
+                {0, 0, 0, 6, 8, 0, 11},
+                {0, 0, 0, 0, 9, 11, 0},
+        });
+    }
+
     public static void main(String[] args) {
         BinaryTreeNode root = build();
         preOrderTraversal(root);
@@ -525,5 +539,6 @@ public class Main {
         equalSum();
         findFirstInArray();
         prim();
+        kruskal();
     }
 }

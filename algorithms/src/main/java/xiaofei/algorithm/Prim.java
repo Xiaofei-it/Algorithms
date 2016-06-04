@@ -35,17 +35,36 @@ public class Prim {
         Set<Integer> vertexes2 = new HashSet<>();
         for (int i = 0; i < graph.length; ++i) {
             vertexes1.add(i);
-            for (int j = 0; j < graph[i].length; ++i) {
+            for (int j = i + 1; j < graph[i].length; ++j) {
                 if (graph[i][j] > 0) {
                     edges1.add(new Edge(i, j, graph[i][j]));
                 }
             }
         }
+        vertexes1.remove(0);
+        vertexes2.add(0);
         while (!vertexes1.isEmpty()) {
+            int minWeight = Integer.MAX_VALUE;
+            Edge minEdge = null;
             for (Edge edge : edges1) {
-                if (vertexes1.contains()edge.start)
+                if (vertexes1.contains(edge.start) && vertexes2.contains(edge.end)
+                    || vertexes1.contains(edge.end) && vertexes2.contains(edge.start)) {
+                    if (edge.weight < minWeight) {
+                        minWeight = edge.weight;
+                        minEdge = edge;
+                    }
+                }
             }
+            edges2.add(minEdge);
+            vertexes1.remove(minEdge.start);
+            vertexes1.remove(minEdge.end);
+            vertexes2.add(minEdge.start);
+            vertexes2.add(minEdge.end);
         }
+        for (Edge edge : edges2) {
+            System.out.println(edge.start + " " + edge.end + " " + edge.weight);
+        }
+        System.out.println();
     }
 
     private static class Edge {

@@ -146,3 +146,9 @@
 2016年6月3日
 
 [FindFirstInArray](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/FindFirstInArray.java)
+
+##Prim
+
+2016年6月4日
+
+[Prim](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/Prim.java)

@@ -25,6 +25,7 @@ import xiaofei.algorithm.AckermannFunction;
 import xiaofei.algorithm.BinarySearchTree;
 import xiaofei.algorithm.BinaryTreeHeight;
 import xiaofei.algorithm.BinaryTreeNode;
+import xiaofei.algorithm.Dijkstra;
 import xiaofei.algorithm.DisjointSet;
 import xiaofei.algorithm.DoubleStackBasedCalculator;
 import xiaofei.algorithm.EightDigitMaze;
@@ -517,6 +518,19 @@ public class Main {
         });
     }
 
+    private static void dijkstra() {
+        System.out.println("\nDijkstra");
+        Dijkstra.solve(new int[][]{
+                {0, 7, 9, 0, 0, 14},
+                {7, 0, 10, 15, 0, 0},
+                {9, 10, 0, 11, 0, 2},
+                {0, 15, 11, 0, 6, 0},
+                {0, 0, 0, 6, 0, 9},
+                {14, 0, 2, 0, 9, 0},
+        }, 0);
+
+    }
+
     public static void main(String[] args) {
         BinaryTreeNode root = build();
         preOrderTraversal(root);
@@ -540,5 +554,6 @@ public class Main {
         findFirstInArray();
         prim();
         kruskal();
+        dijkstra();
     }
 }

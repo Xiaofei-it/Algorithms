@@ -164,3 +164,9 @@
 2016年6月6日
 
 [Dijkstra](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/Dijkstra.java)
+
+##二叉树宽度
+
+2016年6月7日
+
+[二叉树宽度](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/BinaryTreeWidth.java)

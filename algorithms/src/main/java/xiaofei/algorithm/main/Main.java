@@ -25,6 +25,7 @@ import xiaofei.algorithm.AckermannFunction;
 import xiaofei.algorithm.BinarySearchTree;
 import xiaofei.algorithm.BinaryTreeHeight;
 import xiaofei.algorithm.BinaryTreeNode;
+import xiaofei.algorithm.BinaryTreeWidth;
 import xiaofei.algorithm.Dijkstra;
 import xiaofei.algorithm.DisjointSet;
 import xiaofei.algorithm.DoubleStackBasedCalculator;
@@ -528,7 +529,25 @@ public class Main {
                 {0, 0, 0, 6, 0, 9},
                 {14, 0, 2, 0, 9, 0},
         }, 0);
+    }
 
+    private static void binaryTreeWidth() {
+        System.out.println("\nBinaryTreeWidth");
+        BinaryTreeNode node0 = new BinaryTreeNode();
+        BinaryTreeNode node1 = new BinaryTreeNode();
+        BinaryTreeNode node2 = new BinaryTreeNode();
+        BinaryTreeNode node3 = new BinaryTreeNode();
+        BinaryTreeNode node4 = new BinaryTreeNode();
+        BinaryTreeNode node5 = new BinaryTreeNode();
+        node0.data = 0; node1.data = 1; node2.data = 2; node3.data = 3; node4.data = 4; node5.data = 5;
+        node0.left = node1; node0.right = node2;
+        node2.left = node3;
+        node3.left = node4;
+        node4.left = node5;
+        System.out.println(BinaryTreeWidth.solve(node0));
+        BinaryTreeNode node6 = new BinaryTreeNode();
+        node2.right = node6;
+        System.out.println(BinaryTreeWidth.solve(node0));
     }
 
     public static void main(String[] args) {
@@ -555,5 +574,6 @@ public class Main {
         prim();
         kruskal();
         dijkstra();
+        binaryTreeWidth();
     }
 }

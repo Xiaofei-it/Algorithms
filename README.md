@@ -170,3 +170,9 @@
 2016年6月7日
 
 [二叉树宽度](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/BinaryTreeWidth.java)
+
+##二叉树最大分数
+
+2016年6月8日
+
+[二叉树最大分数](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/problem/BinaryTreeMaxScore.java)

@@ -45,6 +45,7 @@ import xiaofei.algorithm.QuickSort;
 import xiaofei.algorithm.SnakeMatrix;
 import xiaofei.algorithm.TopologicalSort;
 import xiaofei.algorithm.TwentyFourGame;
+import xiaofei.algorithm.problem.BinaryTreeMaxScore;
 
 /**
  * Created by Xiaofei on 16/5/18.
@@ -550,6 +551,14 @@ public class Main {
         System.out.println(BinaryTreeWidth.solve(node0));
     }
 
+    private static void binaryTreeMaxScore() {
+        System.out.println("\nBinaryTreeMaxScore");
+        BinaryTreeMaxScore.solve(new long[]{5, 7, 1, 2, 10});
+        BinaryTreeMaxScore.solve(new long[]{5, 7, 4, 1, 2, 8});
+        BinaryTreeMaxScore.solve(new long[]{5, 7});
+        BinaryTreeMaxScore.solve(new long[]{5});
+    }
+
     public static void main(String[] args) {
         BinaryTreeNode root = build();
         preOrderTraversal(root);
@@ -575,5 +584,6 @@ public class Main {
         kruskal();
         dijkstra();
         binaryTreeWidth();
+        binaryTreeMaxScore();
     }
 }

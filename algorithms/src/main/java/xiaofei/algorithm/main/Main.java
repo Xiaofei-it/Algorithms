@@ -46,6 +46,7 @@ import xiaofei.algorithm.SnakeMatrix;
 import xiaofei.algorithm.TopologicalSort;
 import xiaofei.algorithm.TwentyFourGame;
 import xiaofei.algorithm.problem.BinaryTreeMaxScore;
+import xiaofei.algorithm.problem.PreOrderInOrderToPostOrder;
 
 /**
  * Created by Xiaofei on 16/5/18.
@@ -559,6 +560,13 @@ public class Main {
         BinaryTreeMaxScore.solve(new long[]{5});
     }
 
+    private static void preOrderInOrderToPostOrder() {
+        System.out.println("\nPreOrderInOrderToPostOrder");
+        System.out.println(PreOrderInOrderToPostOrder.solve("1243", "4213"));
+        System.out.println(PreOrderInOrderToPostOrder.solve("1234", "2431"));
+        System.out.println(PreOrderInOrderToPostOrder.solve("123456789", "243167598"));
+    }
+
     public static void main(String[] args) {
         BinaryTreeNode root = build();
         preOrderTraversal(root);
@@ -585,5 +593,6 @@ public class Main {
         dijkstra();
         binaryTreeWidth();
         binaryTreeMaxScore();
+        preOrderInOrderToPostOrder();
     }
 }

@@ -18,6 +18,7 @@
 
 package xiaofei.algorithm.main;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -47,6 +48,7 @@ import xiaofei.algorithm.TopologicalSort;
 import xiaofei.algorithm.TwentyFourGame;
 import xiaofei.algorithm.problem.BinaryTreeMaxScore;
 import xiaofei.algorithm.problem.PreOrderInOrderToPostOrder;
+import xiaofei.algorithm.problem.PreOrderPostOrderToInOrder;
 
 /**
  * Created by Xiaofei on 16/5/18.
@@ -567,6 +569,30 @@ public class Main {
         System.out.println(PreOrderInOrderToPostOrder.solve("123456789", "243167598"));
     }
 
+    private static void preOrderPostOrderToInOrder() {
+        System.out.println("\nPreOrderPostOrderToInOrder");
+        ArrayList<String> result = PreOrderPostOrderToInOrder.solve("", "");
+        for (String s : result) {
+            System.out.println(s);
+        }
+        System.out.println();
+        result = PreOrderPostOrderToInOrder.solve("1", "1");
+        for (String s : result) {
+            System.out.println(s);
+        }
+        System.out.println();
+        result = PreOrderPostOrderToInOrder.solve("123", "321");
+        for (String s : result) {
+            System.out.println(s);
+        }
+        System.out.println();
+        result = PreOrderPostOrderToInOrder.solve("123456", "325641");
+        for (String s : result) {
+            System.out.println(s);
+        }
+        System.out.println();
+    }
+
     public static void main(String[] args) {
         BinaryTreeNode root = build();
         preOrderTraversal(root);
@@ -594,5 +620,6 @@ public class Main {
         binaryTreeWidth();
         binaryTreeMaxScore();
         preOrderInOrderToPostOrder();
+        preOrderPostOrderToInOrder();
     }
 }

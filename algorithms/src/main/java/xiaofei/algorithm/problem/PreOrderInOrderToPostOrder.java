@@ -21,7 +21,11 @@ package xiaofei.algorithm.problem;
 /**
  * Created by Xiaofei on 16/6/9.
  *
- * 自己出一个题：前序遍历和中序遍历，得到后序遍历
+ * 现在脑子里好乱，要做的事情好多，要学的东西好多，工作上一堆事。真的好烦。
+ *
+ * 好烦好烦好烦。
+ *
+ * Fucking mess!!!
  *
  */
 public class PreOrderInOrderToPostOrder {

@@ -176,3 +176,9 @@
 2016年6月8日
 
 [二叉树最大分数](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/problem/BinaryTreeMaxScore.java)
+
+##二叉树前中转后序遍历
+
+2016年6月9日
+
+[二叉树前中转后序遍历](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/problem/PreOrderInOrderToPostOrder.java)

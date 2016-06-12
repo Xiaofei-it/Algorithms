@@ -23,6 +23,7 @@ import java.util.List;
 import java.util.Random;
 
 import xiaofei.algorithm.AckermannFunction;
+import xiaofei.algorithm.BinarySearch;
 import xiaofei.algorithm.BinarySearchTree;
 import xiaofei.algorithm.BinaryTreeHeight;
 import xiaofei.algorithm.BinaryTreeNode;
@@ -602,6 +603,15 @@ public class Main {
         System.out.println(InOrderPostOrderToPreOrder.solve("21", "21"));
     }
 
+    private static void binarySearch() {
+        System.out.println("\nBinarySearch");
+        System.out.println(BinarySearch.find(new int[]{1}, 1));
+        System.out.println(BinarySearch.find(new int[]{1, 2}, 1));
+        System.out.println(BinarySearch.find(new int[]{1, 2, 3}, 3));
+        System.out.println(BinarySearch.find(new int[]{1, 2}, 2));
+        System.out.println(BinarySearch.find(new int[]{1, 2}, 3));
+    }
+
     public static void main(String[] args) {
         BinaryTreeNode root = build();
         preOrderTraversal(root);
@@ -631,5 +641,6 @@ public class Main {
         preOrderInOrderToPostOrder();
         preOrderPostOrderToInOrder();
         inOrderPostOrderToPreOrder();
+        binarySearch();
     }
 }

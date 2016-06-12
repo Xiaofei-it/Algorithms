@@ -194,3 +194,9 @@
 2016年6月11日
 
 [二叉树后中转前序遍历](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/problem/InOrderPostOrderToPreOrder.java)
+
+##二分查找
+
+2016年6月12日
+
+[二分查找](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/BinarySearch.java)

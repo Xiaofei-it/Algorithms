@@ -47,6 +47,7 @@ import xiaofei.algorithm.SnakeMatrix;
 import xiaofei.algorithm.TopologicalSort;
 import xiaofei.algorithm.TwentyFourGame;
 import xiaofei.algorithm.problem.BinaryTreeMaxScore;
+import xiaofei.algorithm.problem.InOrderPostOrderToPreOrder;
 import xiaofei.algorithm.problem.PreOrderInOrderToPostOrder;
 import xiaofei.algorithm.problem.PreOrderPostOrderToInOrder;
 
@@ -564,6 +565,7 @@ public class Main {
 
     private static void preOrderInOrderToPostOrder() {
         System.out.println("\nPreOrderInOrderToPostOrder");
+        System.out.println(PreOrderInOrderToPostOrder.solve("12", "12"));
         System.out.println(PreOrderInOrderToPostOrder.solve("1243", "4213"));
         System.out.println(PreOrderInOrderToPostOrder.solve("1234", "2431"));
         System.out.println(PreOrderInOrderToPostOrder.solve("123456789", "243167598"));
@@ -591,6 +593,13 @@ public class Main {
             System.out.println(s);
         }
         System.out.println();
+    }
+
+    private static void inOrderPostOrderToPreOrder() {
+        System.out.println("\nInOrderPostOrderToPreOrder");
+        System.out.println(InOrderPostOrderToPreOrder.solve("123", "132"));
+        System.out.println(InOrderPostOrderToPreOrder.solve("12", "21"));
+        System.out.println(InOrderPostOrderToPreOrder.solve("21", "21"));
     }
 
     public static void main(String[] args) {
@@ -621,5 +630,6 @@ public class Main {
         binaryTreeMaxScore();
         preOrderInOrderToPostOrder();
         preOrderPostOrderToInOrder();
+        inOrderPostOrderToPreOrder();
     }
 }

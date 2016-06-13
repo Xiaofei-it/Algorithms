@@ -28,6 +28,7 @@ import xiaofei.algorithm.BinarySearchTree;
 import xiaofei.algorithm.BinaryTreeHeight;
 import xiaofei.algorithm.BinaryTreeNode;
 import xiaofei.algorithm.BinaryTreeWidth;
+import xiaofei.algorithm.BubbleSort;
 import xiaofei.algorithm.Dijkstra;
 import xiaofei.algorithm.DisjointSet;
 import xiaofei.algorithm.DoubleStackBasedCalculator;
@@ -51,6 +52,8 @@ import xiaofei.algorithm.problem.BinaryTreeMaxScore;
 import xiaofei.algorithm.problem.InOrderPostOrderToPreOrder;
 import xiaofei.algorithm.problem.PreOrderInOrderToPostOrder;
 import xiaofei.algorithm.problem.PreOrderPostOrderToInOrder;
+import xiaofei.library.comparatorgenerator.ComparatorGenerator;
+import xiaofei.library.comparatorgenerator.Criterion;
 
 /**
  * Created by Xiaofei on 16/5/18.
@@ -612,6 +615,30 @@ public class Main {
         System.out.println(BinarySearch.find(new int[]{1, 2}, 3));
     }
 
+    private static void bubbleSort() {
+        System.out.println("\nBubbleSort");
+        class Wrapper {
+            @Criterion
+            int i;
+            Wrapper(int i) {
+                this.i = i;
+            }
+        }
+        Wrapper[] wrappers = new Wrapper[]{new Wrapper(3), new Wrapper(2), new Wrapper(4)};
+        BubbleSort.sort(wrappers, new ComparatorGenerator<>(Wrapper.class).generate());
+        for (Wrapper wrapper : wrappers) {
+            System.out.print(" " + wrapper.i);
+        }
+        System.out.println();
+        wrappers = new Wrapper[]{new Wrapper(3), new Wrapper(2), new Wrapper(4), new Wrapper(5)};
+        BubbleSort.sort(wrappers, new ComparatorGenerator<>(Wrapper.class).generate());
+        for (Wrapper wrapper : wrappers) {
+            System.out.print(" " + wrapper.i);
+        }
+        System.out.println();
+
+    }
+
     public static void main(String[] args) {
         BinaryTreeNode root = build();
         preOrderTraversal(root);
@@ -642,5 +669,6 @@ public class Main {
         preOrderPostOrderToInOrder();
         inOrderPostOrderToPreOrder();
         binarySearch();
+        bubbleSort();
     }
 }

@@ -200,3 +200,5 @@
 2016年6月12日
 
 [二分查找](https://github.com/Xiaofei-it/Algorithms/blob/master/algorithms/src/main/java/xiaofei/algorithm/BinarySearch.java)
+
+So busy recently!
